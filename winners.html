@@ -281,7 +281,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small eml"></span>
                                 <img class="img-profile rounded-circle"
                                     src="img/undraw_profile.svg">
                             </a>
@@ -333,8 +333,8 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Total</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">15,000</div>
+                                                Total No of Winners</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800 totalWinners">15,000</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-calendar fa-2x text-gray-300"></i>
@@ -351,8 +351,68 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                Cash</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">7,500</div>
+                                                Total No of Cash Winners</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800 totalCashWinners">7,500</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-4 col-lg-3 col-md-4 mb-4">
+                            <div class="card border-left-info shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Total No of 
+                                                Airtime Winners
+                                            </div>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-auto">
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800 totalAirtimeWinners">7,500</div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-4 col-lg-3 col-md-4 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                Total Amount Won</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800 totalAmount">#72,500</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-4 col-lg-3 col-md-4 mb-4">
+                            <div class="card border-left-success shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                                Total Amount of Cash Won</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800 totalCash">#7,500</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
@@ -368,17 +428,12 @@
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Airtime
-                                            </div>
-                                            <div class="row no-gutters align-items-center">
-                                                <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">7,500</div>
-                                                </div>
-                                                
-                                            </div>
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                                Total Amount of Airtime Won</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800 totalAirtime">79,500</div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -389,29 +444,32 @@
                     </div>
 
                     <div class="row">
-                        <div class="col">
-                            <div class="col-md-12  col-sm-4 mb-4" style="border: none;">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="mb-4" style="border: none;">
                                 <div class="card">
-                                    <div class="card-header" style="display:flex">
+                                    <div class="card-header col-sm-12" style="display:flex">
                                         <h6 style="margin-right: 900px;">Winners</h6>
                                         <button class="btn btn-primary btn-sm" style="margin-right: 1px;"> Add</button>
                                     </div>
-                                    <div class="card-body">
-                                        <table class="col-sm-4 col-md-12 col-lg-12"style="border-collapse:collapse;">
+                                    <div class="card-body col-sm-12">
+                                        <table class="col-sm-12 "style="border:1px solid #dddddd">
                                             <tr>
-                                                <th class="col-md-3 col-sm-1" style="border:1px solid #dddddd; text-align:left; padding:4px;" >MSISDN</th>
-                                                <th class="col-md-3 col-sm-1" style="border:1px solid #dddddd; text-align:left; padding:4px;">Amount Won</th>
-                                                <th class="col-md-3 col-sm-1" style="border:1px solid #dddddd; text-align:left; padding:4px;">Winning Date</th>
-                                                <th class="col-md-3 col-sm-1" style="border:1px solid #dddddd; text-align:left; padding:4px;"> Type
+                                                <th class="col-md-3 col-sm-1" style="border:1px solid #dddddd; text-align:left; padding:2px;" >MSISDN</th>
+                                                <th class="col-md-3 col-sm-1" style="border:1px solid #dddddd; text-align:left; padding:2px;">Amount Won</th>
+                                                <th class="col-md-3 col-sm-1" style="border:1px solid #dddddd; text-align:left; padding:2px;">Winning Date</th>
+                                                <th class="col-md-3 col-sm-1" style="border:1px solid #dddddd; text-align:left; padding:2px;"> Type
                                                 
                                                 </th>
                                                 
                                             </tr>
-                                            <tr>
-                                                <td class="col-md-3 col-sm-1" style="border:1px solid #dddddd; text-align:left; padding:4px;">+2349444323424</td>
-                                                <td class="col-md-3 col-sm-1" style="border:1px solid #dddddd; text-align:left; padding:4px;">5000</td>
-                                                <td class="col-md-3 col-sm-1" style="border:1px solid #dddddd; text-align:left; padding:4px;">22-08-2023</td>
-                                                <td class="col-md-3 col-sm-1" style="border:1px solid #dddddd; text-align:left; padding:4px;">
+                                            <tbody class="tbody">
+
+                                            
+                                            <tr >
+                                                <td class="col-md-3 col-sm-1" style="border:1px solid #dddddd; text-align:left; padding:2px;">+2349444323424</td>
+                                                <td class="col-md-3 col-sm-1" style="border:1px solid #dddddd; text-align:left; padding:2px;">5000</td>
+                                                <td class="col-md-3 col-sm-1" style="border:1px solid #dddddd; text-align:left; padding:2px;">22-08-2023</td>
+                                                <td class="col-md-3 col-sm-1" style="border:1px solid #dddddd; text-align:left; padding:2px;">
                                                     <div class="dropdown">
                                                         Cash
                                                         <i class="bi bi-three-dots-vertical" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="float: right;"></i>
@@ -443,6 +501,7 @@
                                                 </td>
                                                 
                                             </tr>
+                                        </tbody>
                                         </table>
                                     </div>
                                 </div>
@@ -450,6 +509,9 @@
 
                         </div>
                     </div>
+
+        <!-- Custom JavaScript -->
+        <script src="js/winners.js"></script>
 
 <!-- Bootstrap core JavaScript-->
 <script src="vendor/jquery/jquery.min.js"></script>

@@ -23,13 +23,13 @@
                 <form class="needs-validation mt-5 ">
                     <div class="container mb-4">
                         <label for="email" class="form-label fw-bold fs-lg">Email Address:</label>
-                        <input type="email" class="form-control" required>
+                        <input type="email" class="form-control email" required>
                         <!-- <div class="valid-feedback">Looks Good</div>
                         <div class="invalid-feedback">Please enter an accurate email</div> -->
                     </div>
                     <div class="container  mb-3">
                         <label for="password" class="form-label fw-bold fs-large">Password:</label>
-                        <input type="password" class="form-control" required>
+                        <input type="password" class="form-control password " required>
                         <!-- <div class="valid-feedback">Looks Good</div>
                         <div class="invalid-feedback">Pick an accurate password</div> -->
                     </div>
@@ -37,11 +37,11 @@
                         <label for="form-check-input" class="form-label"></label>
                         <input type="checkbox" class="form-check-input"> Remember Me?
 
+                        
                     </div>
                     <div class="d-grid">
                         <input type="submit" class="btn btn-md btn-primary " value="Submit">
                         
-
                     </div>
                     
                 </form>
@@ -53,16 +53,9 @@
     
     
             
-    <script>
-        const form = document.querySelector('.needs-validation');
+    <!-- Custom js -->
+    <script src="js/login.js"></script>
 
-        form.addEventListener('submit', (e) => {
-            
-            window.location.href = 'index.html' ;
-            
-        })
-
-         </script>
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
