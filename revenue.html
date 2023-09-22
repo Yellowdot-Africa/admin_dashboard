@@ -11,8 +11,12 @@
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
+    <!-- DataTables Plugins -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
+
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 <body id="page-top">
 
@@ -156,11 +160,11 @@
                         </li>
 
                         <!-- Nav Item - Alerts -->
-                        <li class="nav-item dropdown no-arrow mx-1">
+                         <li class="nav-item dropdown no-arrow mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-bell fa-fw"></i>
-                                <!-- Counter - Alerts -->
+                                 <!-- Counter - Alerts -->
                                 <span class="badge badge-danger badge-counter">3+</span>
                             </a>
                             <!-- Dropdown - Alerts -->
@@ -303,7 +307,7 @@
                                     Logout
                                 </a>
                             </div>
-                        </li>
+                        </li> -->
 
                     </ul>
 
@@ -350,7 +354,7 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                New</div>
+                                                Additon</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800 new">50,000</div>
                                         </div>
                                         <div class="col-auto">
@@ -393,10 +397,10 @@
                                 <div class="card ">
                                     <div class="card-header col-sm-12" style="display:flex">
                                         <h6 style="margin-right: 920px;">Revenue</h6>
-                                        <button class="btn btn-primary btn-sm" style="margin-right: 2px;"> Add</button>
+                                        <!-- <button class="btn btn-primary btn-sm" style="margin-right: 2px;"> Add</button> -->
                                     </div>
                                     <div class="card-body">
-                                        <table style="border-collapse:collapse; width:100%">
+                                        <table style="border-collapse:collapse; width:100%" id="myTable" class="display">
                                             <tbody class="tablebody">
                                             <tr>
                                                 <th class="col-md-3 col-sm-8" style="border:1px solid #dddddd; text-align:left; padding:4px;" > Date </th>
@@ -406,8 +410,8 @@
                                                 
                                                 </th>
                                                 
-                                            </tr>
-                                            <!-- <tr>
+                                               </tr>
+                                             <!-- <tr>
                                                 <td class="col-md-3 col-sm-8" style="border:1px solid #dddddd; text-align:left; padding:4px;">23-08-2023</td>
                                                 <td class="col-md-3 col-sm-8" style="border:1px solid #dddddd; text-align:left; padding:4px;">10,000</td>
                                                 <td class="col-md-3 col-sm-8" style="border:1px solid #dddddd; text-align:left; padding:4px;">100,000</td>
@@ -441,7 +445,7 @@
                                                     </div>
                                                 </td>
                                                 
-                                            </tr> --> 
+                                            </tr> -->
                                         </tbody>
                                         </table>
                                     </div>
@@ -451,25 +455,26 @@
                         </div>
                     </div>
 
-
-        <!-- Custom JavaScript -->
-    <script src="js/revenue.js"></script>
-    
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
-
-    <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
 </body>
+<!-- Custom JavaScript -->
+<script src="js/revenue.js"></script>
+
+<!-- Bootstrap core JavaScript-->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Core plugin JavaScript-->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for all pages-->
+<script src="js/sb-admin-2.min.js"></script>
+
+<!-- Page level plugins -->
+<script src="vendor/chart.js/Chart.min.js"></script>
+
+<!-- Page level custom scripts -->
+<script src="js/demo/chart-area-demo.js"></script>
+<script src="js/demo/chart-pie-demo.js"></script>
+<!-- DataTables-JS-CDN -->
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
 </html>

@@ -14,6 +14,13 @@
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
     crossorigin="anonymous">
 
+
+    <!-- DataTables CDN -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
+  
+
+
+
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 </head>
@@ -452,7 +459,7 @@
                                         <button class="btn btn-primary btn-sm" style="margin-right: 1px;"> Add</button>
                                     </div>
                                     <div class="card-body col-sm-12">
-                                        <table class="col-sm-12 "style="border:1px solid #dddddd">
+                                        <table class="col-sm-12 "style="border:1px solid #dddddd" id="myTable">
                                             <tr>
                                                 <th class="col-md-3 col-sm-1" style="border:1px solid #dddddd; text-align:left; padding:2px;" >MSISDN</th>
                                                 <th class="col-md-3 col-sm-1" style="border:1px solid #dddddd; text-align:left; padding:2px;">Amount Won</th>
@@ -512,6 +519,11 @@
 
         <!-- Custom JavaScript -->
         <script src="js/winners.js"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <!-- JQUERY DATATABLES -->
+        <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
 
 <!-- Bootstrap core JavaScript-->
 <script src="vendor/jquery/jquery.min.js"></script>

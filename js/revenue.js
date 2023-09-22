@@ -4,12 +4,14 @@ const dashboard = document.querySelector('.dashboard');
 const revenue = document.querySelector('.revenue');
 const subscriptions = document.querySelector('.subscriptions');
 
-//body.addEventListener('click', getRevenue);
-//body.addEventListener('click', getWinners);
+
 
 let renewalReveue = 0;
 let totalRev = 0;
 let addRev = 0;
+let currentPage = 1;
+let rows = 10;
+
 
 async function getRevenue(e) {
      
@@ -26,6 +28,9 @@ async function getRevenue(e) {
     .then(function(data) 
     
     {
+
+        
+       // console.log(data, 'here');
          for(let i=0; i<data.doc.allSubRevenue.length; i++){
              renewalReveue += data.doc.allSubRevenue[i].renewalRevenue
 
@@ -46,10 +51,10 @@ async function getRevenue(e) {
         console.log(data);
 
         const grossMonthly = document.querySelector('.gross');
-        grossMonthly.textContent = '₦' +renewalReveue.toLocaleString('en-US');
-
+        grossMonthly.textContent = '₦' + totalRev.toLocaleString('en-US');
         const newRev = document.querySelector('.new');
-        newRev.textContent = '₦' + totalRev.toLocaleString('en-US');
+        newRev.textContent =   '₦' +renewalReveue.toLocaleString('en-US');
+
 
         const newR = document.querySelector('.renewal');
         newR.textContent = '₦' + addRev.toLocaleString('en-US');
@@ -67,25 +72,66 @@ async function getRevenue(e) {
 
            const threeDotIcons = document.createElement('button');
            threeDotIcons.className = 'bi bi-three-dots-vertical';
+           
+           //console.log(threeDotIcons);
+           
 
            for(const item of newArray){
                const elements = document.createElement('td')
                elements.style.border = '1px solid #dddddd';
                elements.appendChild(threeDotIcons);
+               elements.appendChild(threeDotIcons);
+
+              // console.log(elements.appendChild(threeDotIcons))
 
                elements.textContent = item;
                rowElement.appendChild(elements)
 
            }
-           document.querySelector('.tablebody').appendChild(rowElement)
+           document.querySelector('.tablebody').appendChild(rowElement);
+           
+
+           
+
+            // $(document).ready( function () {
+            //     $('#myTable').DataTable({
+            //         "data": [{
+            //             "Date": data.doc.allSubRevenue[i].createdAt.slice(0,10),
+            //             "New Daily": data.doc.allSubRevenue[i].additionRevenue,
+            //             "Renewal Revenue": data.doc.allSubRevenue[i].renewalRevenue,
+            //             "Total": data.doc.allSubRevenue[i].totalRevenue
+            //         }]
+            //     });
+            // });
+            //Display(newArray, wrapper, 5, currentPage);
            
            newArray = [];
         }
         document.querySelector('.eml').textContent = localStorage.getItem('email');
-        console.log(localStorage.getItem('email'))
+         
 
     })
    
   
 }
+$(document).ready( function () {
+    $('#myTable').DataTable();
+});
 getRevenue();
+
+
+
+
+function Display(items,wrapper,rows,page){
+    page--;
+
+    let loopStart = rows * page;
+    let paginatedItems = items.slice(loopStart, loopStart + rows)
+
+
+    for(let i=0; i<10; i++){
+        //console.log(paginatedItems[i])
+    }
+    
+
+}
